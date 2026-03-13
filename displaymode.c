@@ -54,7 +54,7 @@ enum {
     kArgvDisplayIndex = 4,
 };
 
-const uint32_t kMaxDisplays = 64;
+const uint64_t kMaxDisplays = 64;
 
 // Represents the command-line arguments after parsing.
 struct ParsedArgs {
