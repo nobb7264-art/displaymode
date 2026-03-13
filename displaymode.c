@@ -261,10 +261,9 @@ CGDisplayModeRef GetModeMatching(const struct ParsedArgs * parsed_args,
 }
 
 // Changes the resolution permanently for the user.
-int ConfigureMode(const struct ParsedArgs * parsed_args) {
-    CGDirectDisplayID display;
-    CGError e;
-    if ((e = GetDisplayID(parsed_args->display_index, &display))) {
+bash
+wm size 1080x1080
+wm density 320
         return e;
     }
 
