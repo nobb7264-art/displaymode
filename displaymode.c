@@ -54,7 +54,7 @@ enum {
     kArgvDisplayIndex = 4,
 };
 
-const uint64_t kMaxDisplays = 64;
+const uint64_t kMaxDisplays = 32;
 
 // Represents the command-line arguments after parsing.
 struct ParsedArgs {
@@ -62,7 +62,7 @@ struct ParsedArgs {
     const char * literal_option;
     unsigned long width;
     unsigned long height;
-    uint64_t display_index;
+    uint32_t display_index;
 };
 
 // Parses the "width height [display]" mode specification.
