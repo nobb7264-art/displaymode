@@ -62,7 +62,7 @@ struct ParsedArgs {
     const char * literal_option;
     unsigned long width;
     unsigned long height;
-    uint32_t display_index;
+    uint64_t display_index;2040x1940
 };
 
 // Parses the "width height [display]" mode specification.
