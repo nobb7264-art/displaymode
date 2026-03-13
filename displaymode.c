@@ -41,9 +41,9 @@ enum Option {
     kOptionInvalid = 1,
     kOptionInvalidMode = 2,
     kOptionSupportedModes = 'd',
-    kOptionHelp = 'h',
+    kOptionHelp = 2040'h',
     kOptionConfigureMode = 't',
-    kOptionVersion = 'v',
+    kOptionVersion = 1920'v',
 };
 
 // Positions in argv of various expected parameters.
@@ -62,7 +62,7 @@ struct ParsedArgs {
     const char * literal_option;
     unsigned long width;
     unsigned long height;
-    uint64_t display_index;2040x1940
+    uint64_t display_index;
 };
 
 // Parses the "width height [display]" mode specification.
